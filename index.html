@@ -7,42 +7,32 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="box">
+    <div class="wrapper">
         <header class="header">
             <div class="container header-container">
+                 <a class="header-logo" href="#">
+                    <img src="./images/WebStudio.svg" alt="logo main" width="145" height="31">
+                 </a>
                 <nav class="header-nav">
-                    <a href="#">
-                        <img src="./images/WebStudio.svg" alt="logo main">
-                    </a>
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a class="nav-link" href="%">Studio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacts</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
-                        </li>
-                    </ul>
+                    <a class="nav-link" href="#">Studio</a>
+                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="#">Contacts</a>
+                </nav>
+                <nav class="header-nav-contacts">
+                    <a class="nav-link-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="nav-link-contacts" href="tel:+380961111111">+38 096 111 11 11</a>  
                 </nav>
             </div>
         </header>
         <main>
             <section class="hero-section">
-                <div class="container">
-                    <h1>Effective solutions for your business</h1>
-                    <button class="hero-section-button" type="button">Order service</button>
+                <div class="container hero-container">
+                    <h1 class="hero-title">Effective solutions for your business</h1>
+                    <button class="hero-button" type="button">Order service</button>
                 </div>
             </section>
             <section class="why-us">
-                <div class="container">
+                <div class="container why-us-container">
                     <div class="why-us-items">
                         <h4 class="why-us-items-title">
                            Attention to detail 
@@ -78,79 +68,83 @@
                 </div>
             </section>
             <section class="what-are-we-doing">
-                <div class="container">
+                <div class="container what-are-we-doing-container">
                     <h2 class="title">
                         What are we doing
                     </h2>
-                    <div class="what-are-we-doing-image-container">
-                        <img src="./images/laptop.png" alt="laptop image">
-                    </div>
-                    <div class="what-are-we-doing-image-container">
-                        <img src="./images/phone.jpg" alt="phone image">
-                    </div>
-                    <div class="what-are-we-doing-image-container">
-                        <img src="./images/tablet.png" alt="tablet image">
-                    </div>
+                   <div class="what-are-we-doing-inner">
+                        <div class="what-are-we-doing-image-container">
+                            <img src="./images/laptop.png" alt="laptop image" width="370" height="294">
+                        </div>
+                        <div class="what-are-we-doing-image-container">
+                            <img src="./images/phone.jpg" alt="phone image" width="370" height="294">
+                        </div>
+                        <div class="what-are-we-doing-image-container">
+                            <img src="./images/tablet.png" alt="tablet image" width="370" height="294">
+                        </div>
+                   </div>
                 </div>
             </section>
             <section class="our-team">
-                <div class="container">
-                    <h2>
+                <div class="container our-team-container">
+                    <h2 class="title our-team-title">
                         Our team
                     </h2>
-                    <div class="our-team-item">
-                        <img src="./images/Igor.png" alt="Igor Demyanenko">
-                        <h3>
+                    <div class="our-team-items">
+                        <article class="our-team-item">
+                        <img src="./images/Igor.png" alt="Igor Demyanenko" width="270" height="260">
+                        <h3 class="our-team-item-title">
                             Igor Demyanenko
                         </h3>
-                        <p>
+                        <h5 class="our-team-item-job">
                             Product Designer
-                        </p>
-                    </div>
-                    <div class="our-team-item">
-                        <img src="" alt="Olga Repina">
-                        <h3>
+                        </h5>
+                    </article>
+                    <article class="our-team-item">
+                        <img src="./images/Olga.png" alt="Olga Repina" width="270" height="260">
+                        <h3 class="our-team-item-title">
                             Olga Repina
                         </h3>
-                        <p>
+                        <h5 class="our-team-item-job">
                             Frontend Developer
-                        </p>
-                    </div>
-                    <div class="our-team-item">
-                        <img src="" alt="Nikolay Tarasov">
-                        <h3>
+                        </h5>
+                    </article>
+                    <article class="our-team-item">
+                        <img src="./images/Nikolay.png" alt="Nikolay Tarasov" width="270" height="260">
+                        <h3 class="our-team-item-title">
                             Nikolay Tarasov
                         </h3>
-                        <p>
+                        <h5 class="our-team-item-job">
                             Marketing
-                        </p>
-                    </div>
-                    <div class="our-team-item">
-                        <img src="" alt="Mikhail Ermakov">
-                        <h3>
+                        </h5>
+                    </article>
+                    <article class="our-team-item">
+                        <img src="./images/Mikhail.png" alt="Mikhail Ermakov" width="270" height="260">
+                        <h3 class="our-team-item-title">
                             Mikhail Ermakov
                         </h3>
-                        <p>
+                        <h5 class="our-team-item-job">
                             Frontend Developer
-                        </p>
+                        </h5>
+                    </article>
                     </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
             <div class="container">
-                <a href="#">
-                    <img src="./images/WebStudio.svg" alt="logo main">
+                <a class="footer-image" href="#">
+                    <img src="./images/WebStudio.svg" alt="logo main" width="145" height="31">
                 </a>
-                <ul>
-                    <li class="nav-item">
+                <ul class="footer-links">
+                    <li class="footer-links-item">
                         Kharkov, Pobedy Ave., 26
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <li class="footer-links-item">
+                        <a class="footer-links-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                      </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+                    <li class="footer-links-item">
+                        <a class="footer-links-link" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
             </div>
